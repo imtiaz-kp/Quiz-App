@@ -1,149 +1,67 @@
 const questions = [
-    {
-      questionText: 'What is the capital of Japan?',
+  {
+      questionText: 'Which HTML tag is used for creating a hyperlink?',
       answerOptions: [
-        { answerText: 'Tokyo', isCorrect: true, mark: 5 },
-        { answerText: 'Beijing', isCorrect: false, mark: 0 },
-        { answerText: 'Seoul', isCorrect: false, mark: 0 },
-        { answerText: 'Bangkok', isCorrect: false, mark: 0 },
+          { answerText: '<link>', isCorrect: false, mark: 0 },
+          { answerText: '<a>', isCorrect: true, mark: 5 },
+          { answerText: '<url>', isCorrect: false, mark: 0 },
+          { answerText: '<hyperlink>', isCorrect: false, mark: 0 },
       ],
-    },
-    {
-      questionText: 'Which element does "O" represent on the periodic table?',
+  },
+  {
+      questionText: 'What does CSS stand for?',
       answerOptions: [
-        { answerText: 'Oxygen', isCorrect: true, mark: 5 },
-        { answerText: 'Gold', isCorrect: false, mark: 0 },
-        { answerText: 'Silver', isCorrect: false, mark: 0 },
-        { answerText: 'Carbon', isCorrect: false, mark: 0 },
+          { answerText: 'Creative Style Sheets', isCorrect: false, mark: 0 },
+          { answerText: 'Colorful Style Sheets', isCorrect: false, mark: 0 },
+          { answerText: 'Computer Style Sheets', isCorrect: false, mark: 0 },
+          { answerText: 'Cascading Style Sheets', isCorrect: true, mark: 5 },
       ],
-    },
-    {
-      questionText: 'Who painted the Mona Lisa?',
+  },
+  {
+      questionText: 'What is the correct way to declare a JavaScript variable?',
       answerOptions: [
-        { answerText: 'Leonardo da Vinci', isCorrect: true, mark:5 },
-        { answerText: 'Pablo Picasso', isCorrect: false, mark: 0 },
-        { answerText: 'Vincent van Gogh', isCorrect: false, mark: 0 },
-        { answerText: 'Michelangelo', isCorrect: false, mark: 0 },
+          { answerText: 'variable x;', isCorrect: false, mark: 0 },
+          { answerText: 'x = 5;', isCorrect: false, mark: 0 },
+          { answerText: 'var x = 5;', isCorrect: true, mark: 5 },
+          { answerText: 'x := 5;', isCorrect: false, mark: 0 },
       ],
-    },
-    {
-      questionText: 'What is the world\'s largest ocean?',
+  },
+  {
+      questionText: 'In React.js, what is a state?',
       answerOptions: [
-        { answerText: 'Atlantic Ocean', isCorrect: false, mark: 0 },
-        { answerText: 'Indian Ocean', isCorrect: false, mark: 0 },
-        { answerText: 'Arctic Ocean', isCorrect: false, mark: 0 },
-        { answerText: 'Pacific Ocean', isCorrect: true, mark: 5 },
+          { answerText: 'A variable that cannot be changed', isCorrect: false, mark: 0 },
+          { answerText: 'A variable that holds dynamic data', isCorrect: true, mark: 5 },
+          { answerText: 'A function that updates the DOM', isCorrect: false, mark: 0 },
+          { answerText: 'A constant value', isCorrect: false, mark: 0 },
       ],
-    },
-    {
-      questionText: 'Which planet is known as the "Red Planet"?',
+  },
+  {
+      questionText: 'Which CSS property is used for changing the text color of an element?',
       answerOptions: [
-        { answerText: 'Mars', isCorrect: true, mark: 5 },
-        { answerText: 'Venus', isCorrect: false, mark: 0 },
-        { answerText: 'Jupiter', isCorrect: false, mark: 0 },
-        { answerText: 'Saturn', isCorrect: false, mark: 0 },
+          { answerText: 'color', isCorrect: true, mark: 5 },
+          { answerText: 'text-color', isCorrect: false, mark: 0 },
+          { answerText: 'font-color', isCorrect: false, mark: 0 },
+          { answerText: 'text-style', isCorrect: false, mark: 0 },
       ],
-    },
-    {
-        questionText: 'What is the largest planet in our solar system?',
-        answerOptions: [
-          { answerText: 'Mars', isCorrect: false, mark: 0 },
-          { answerText: 'Jupiter', isCorrect: true, mark: 5 },
-          { answerText: 'Saturn', isCorrect: false, mark: 0 },
-          { answerText: 'Venus', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'What is the largest mammal in the world?',
-        answerOptions: [
-          { answerText: 'Elephant', isCorrect: false, mark: 0 },
-          { answerText: 'Blue Whale', isCorrect: true, mark: 5 },
-          { answerText: 'Giraffe', isCorrect: false, mark: 0 },
-          { answerText: 'Lion', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'Who wrote "Romeo and Juliet"?',
-        answerOptions: [
-          { answerText: 'William Shakespeare', isCorrect: true, mark: 5 },
-          { answerText: 'Jane Austen', isCorrect: false, mark: 0 },
-          { answerText: 'Charles Dickens', isCorrect: false, mark: 0 },
-          { answerText: 'Emily Dickinson', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'Which planet is known as the "Morning Star"?',
-        answerOptions: [
-          { answerText: 'Mars', isCorrect: false, mark: 0 },
-          { answerText: 'Venus', isCorrect: true, mark: 5 },
-          { answerText: 'Mercury', isCorrect: false, mark: 0 },
-          { answerText: 'Saturn', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'What is the main ingredient in guacamole?',
-        answerOptions: [
-          { answerText: 'Tomato', isCorrect: false, mark: 0 },
-          { answerText: 'Avocado', isCorrect: true, mark: 5 },
-          { answerText: 'Onion', isCorrect: false, mark: 0 },
-          { answerText: 'Lime', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'Who painted the famous artwork "Starry Night"?',
-        answerOptions: [
-          { answerText: 'Pablo Picasso', isCorrect: false, mark: 0 },
-          { answerText: 'Vincent van Gogh', isCorrect: true, mark: 5 },
-          { answerText: 'Leonardo da Vinci', isCorrect: false, mark: 0 },
-          { answerText: 'Claude Monet', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'What is the tallest mountain in the world?',
-        answerOptions: [
-          { answerText: 'Mount Kilimanjaro', isCorrect: false, mark: 0 },
-          { answerText: 'Kangchenjunga', isCorrect: false, mark: 0 },
-          { answerText: 'Mount Everest', isCorrect: true, mark:5 },
-          { answerText: 'Denali', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'Which famous scientist developed the theory of general relativity?',
-        answerOptions: [
-          { answerText: 'Isaac Newton', isCorrect: false, mark: 0 },
-          { answerText: 'Marie Curie', isCorrect: false, mark: 0 },
-          { answerText: 'Albert Einstein', isCorrect: true, mark: 5 },
-          { answerText: 'Galileo Galilei', isCorrect: false, mark: 0 },
-        ],
-      },
-      {
-        questionText: 'What is the capital of France?',
-        answerOptions: [
-            { answerText: 'New York', isCorrect: false,mark:0 },
-            { answerText: 'London', isCorrect: false,mark:0 },
-            { answerText: 'Paris', isCorrect: true ,mark:5},
-            { answerText: 'Dublin', isCorrect: false ,mark:0},
-        ],
-    },
-    {
-        questionText: 'Who is CEO of Tesla?',
-        answerOptions: [
-            { answerText: 'Jeff Bezos', isCorrect: false,mark:0 },
-            { answerText: 'Elon Musk', isCorrect: true,mark:5 },
-            { answerText: 'Bill Gates', isCorrect: false,mark:0 },
-            { answerText: 'Tony Stark', isCorrect: false ,mark:0},
-        ],
-    },
-    {
-        questionText: 'The iPhone was created by which company?',
-        answerOptions: [
-            { answerText: 'Apple', isCorrect: true,mark:5 },
-            { answerText: 'Intel', isCorrect: false,mark:0 },
-            { answerText: 'Amazon', isCorrect: false,mark:0 },
-            { answerText: 'Microsoft', isCorrect: false,mark:0 },
-        ],
-    },
-    
-  ];
+  },
+  {
+      questionText: 'In JavaScript, what is a callback function?',
+      answerOptions: [
+          { answerText: 'A function that is called automatically', isCorrect: false, mark: 0 },
+          { answerText: 'A function that is passed as an argument to another function and is executed after some operation has been completed', isCorrect: true, mark: 5 },
+          { answerText: 'A function that returns another function', isCorrect: false, mark: 0 },
+          { answerText: 'A function that calls itself', isCorrect: false, mark: 0 },
+      ],
+  },
+  {
+      questionText: 'Which React.js method is used for rendering components?',
+      answerOptions: [
+          { answerText: 'render()', isCorrect: true, mark: 5 },
+          { answerText: 'display()', isCorrect: false, mark: 0 },
+          { answerText: 'show()', isCorrect: false, mark: 0 },
+          { answerText: 'component()', isCorrect: false, mark: 0 },
+      ],
+  },
+];
 
-  export default questions
+export default questions;
